@@ -20,7 +20,7 @@ $ sudo apt install gcc g++ cmake
 
 ```bash
 $ cd build
-$ cmake
+$ cmake ..
 $ make
 ```
 
