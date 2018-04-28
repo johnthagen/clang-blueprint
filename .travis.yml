@@ -8,7 +8,6 @@ matrix:
   include:
     - os: linux
       dist: trusty
-      compiler: gcc
 
 script:
   - cd build
