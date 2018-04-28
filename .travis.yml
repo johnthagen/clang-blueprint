@@ -1,12 +1,13 @@
 language: cpp
 
+compiler:
+  - clang
+  - gcc
+
 matrix:
   include:
     - os: linux
       dist: trusty
-      compiler:
-        - clang
-        - gcc
 
 script:
   - cd build
