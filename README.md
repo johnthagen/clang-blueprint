@@ -1,5 +1,9 @@
 # clang-blueprint
 
+| Build Status |                                                                                |
+|--------------|--------------------------------------------------------------------------------|
+| Travis       | [![Travis Build Status][travis-build-status-svg]][travis-build-status]         |
+
 Example CMake project that incorporates awesome Clang tooling.
 
 Current status: *Work in progress*.
@@ -27,3 +31,7 @@ In the `build` directory:
 ```
 $ ./clang-blueprint
 ```
+
+<!-- Badges -->
+[travis-build-status]: https://travis-ci.org/johnthagen/clang-blueprint
+[travis-build-status-svg]: https://travis-ci.org/johnthagen/clang-blueprint.svg?branch=master
