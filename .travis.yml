@@ -6,7 +6,7 @@ matrix:
       dist: trusty
       compiler:
         - clang
-        -gcc
+        - gcc
 
 script:
   - cd build
