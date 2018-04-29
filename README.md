@@ -13,7 +13,7 @@ Current status: *Work in progress*.
 ### Ubuntu 18.04
 
 ```bash
-$ sudo apt install gcc g++ clang cmake
+$ sudo apt install gcc g++ clang cmake doxygen graphviz
 ```
 
 ## Build
@@ -40,6 +40,14 @@ In the `build` directory:
 
 ```bash
 $ ./clang-blueprint
+```
+
+## Build Docs
+
+```bash
+$ cd docs
+$ doxygen
+$ firefox html/index.html
 ```
 
 <!-- Badges -->

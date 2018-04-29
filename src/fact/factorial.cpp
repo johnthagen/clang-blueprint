@@ -1,3 +1,6 @@
+/// \file
+/// \brief Factorial functions.
+
 #include "fact/factorial.h"
 
 namespace fact {
