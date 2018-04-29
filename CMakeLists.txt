@@ -3,4 +3,6 @@ project(clang-blueprint)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(clang-blueprint src/main.cpp)
+include_directories(include)
+
+add_executable(clang-blueprint src/main.cpp src/fact/factorial.cpp include/fact/factorial.h)
