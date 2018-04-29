@@ -13,7 +13,7 @@ Current status: *Work in progress*.
 ### Ubuntu 18.04
 
 ```bash
-$ sudo apt install gcc g++ cmake
+$ sudo apt install gcc g++ clang cmake
 ```
 
 ## Build
@@ -28,7 +28,7 @@ $ make
 
 In the `build` directory:
 
-```
+```bash
 $ ./clang-blueprint
 ```
 
