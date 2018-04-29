@@ -18,6 +18,8 @@ $ sudo apt install gcc g++ clang cmake doxygen graphviz
 
 ## Build
 
+Use `-DCMAKE_BUILD_TYPE=Release` or `-DCMAKE_BUILD_TYPE=Debug` to specify release or debug builds.
+
 ### GCC
 
 ```bash
