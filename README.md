@@ -36,10 +36,18 @@ $ make
 
 ## Run
 
-In the `build` directory:
+Navigate into the `build` directory.
+
+### Application
 
 ```bash
 $ ./clang-blueprint
+```
+
+### Unit tests
+
+```bash
+$ ./unit-test
 ```
 
 ## Build Docs
