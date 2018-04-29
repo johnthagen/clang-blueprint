@@ -5,4 +5,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 include_directories(include)
 
-add_executable(clang-blueprint src/main.cpp src/fact/factorial.cpp include/fact/factorial.h)
+file(GLOB_RECURSE SOURCE_FILES ${PROJECT_SOURCE_DIR}/src/*.cpp)
+file(GLOB_RECURSE INCLUDE_FILES ${PROJECT_SOURCE_DIR}/include/*.h)
+
+add_executable(clang-blueprint ${SOURCE_FILES} ${INCLUDE_FILES})
