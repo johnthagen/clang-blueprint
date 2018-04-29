@@ -58,6 +58,13 @@ $ doxygen
 $ firefox html/index.html
 ```
 
+## References
+
+- [Clang](https://clang.llvm.org/) - Compiler Framework
+- [CMake](https://cmake.org/) - Cross Platform Build System
+- [Catch2](https://github.com/catchorg/Catch2/) - Unit Testing
+- [Doxygen](www.doxygen.org/) - Documentation Generation
+
 <!-- Badges -->
 [travis-build-status]: https://travis-ci.org/johnthagen/clang-blueprint
 [travis-build-status-svg]: https://travis-ci.org/johnthagen/clang-blueprint.svg?branch=master
