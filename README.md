@@ -18,9 +18,19 @@ $ sudo apt install gcc g++ clang cmake
 
 ## Build
 
+### GCC
+
 ```bash
 $ cd build
 $ cmake ..
+$ make
+```
+
+### Clang
+
+```bash
+$ cd build
+$ cmake -DCMAKE_CXX_COMPILER=clang++ ..
 $ make
 ```
 
