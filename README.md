@@ -57,7 +57,7 @@ $ ./unit-test
 ## Build Docs
 
 Documentation is built using [Doxygen](www.doxygen.org/). To configure how the docs are built,
-modify [docs/Doxyfile](docs/Doxyfile).
+modify [`docs/Doxyfile`](docs/Doxyfile).
 
 ```bash
 $ cd docs
@@ -71,7 +71,7 @@ Navigate into the `build` directory.
 
 ### Clang-Tidy
 
-[Clang-Tidy](http://clang.llvm.org/extra/clang-tidy/) is configured using the [`.clang-format`](.clang-format) 
+[Clang-Tidy](http://clang.llvm.org/extra/clang-tidy/) is configured using the [`.clang-tidy`](.clang-tidy) 
 configuration file. Modify this file to control which checks should be run and configure parameters for certain checks.
 
 ```bash
@@ -90,10 +90,10 @@ int32_t main(const int32_t argc, const char* argv[]) {
 
 ### Clang-Format
 
-[Clang-Format](https://clang.llvm.org/docs/ClangFormat.html) is configured using the [.clang-format](.clang-format) 
+[Clang-Format](https://clang.llvm.org/docs/ClangFormat.html) is configured using the [`.clang-format`](.clang-format) 
 configuration file. Modify this file to control how source files should be formatted.
 
-To demonstrate `clang-format` in action, first modify [src/main.cpp](src/main.cpp) from
+To demonstrate `clang-format` in action, first modify [`src/main.cpp`](src/main.cpp) from
 
 ```cpp
     return EXIT_SUCCESS;
