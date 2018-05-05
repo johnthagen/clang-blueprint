@@ -1,7 +1,7 @@
 /// \file
 
-#include <cstdlib>
 #include <cstdint>
+#include <cstdlib>
 #include <iostream>
 
 #include "fact/factorial.h"

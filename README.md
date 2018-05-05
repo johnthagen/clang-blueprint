@@ -13,7 +13,7 @@ Current status: *Work in progress*.
 ### Ubuntu 18.04
 
 ```bash
-$ sudo apt install gcc g++ clang cmake doxygen graphviz
+$ sudo apt install gcc g++ clang clang-tidy cmake doxygen graphviz
 ```
 
 ## Build
@@ -58,6 +58,17 @@ $ ./unit-test
 $ cd docs
 $ doxygen
 $ firefox html/index.html
+```
+
+## Clang Tools
+
+Navigate into the `build` directory.
+
+### Clang-Tidy
+
+```bash
+$ cmake ..
+$ make clang-tidy
 ```
 
 ## References
