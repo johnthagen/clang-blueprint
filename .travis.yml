@@ -14,4 +14,4 @@ script:
   - cd build
   - cmake ..
   - make
-  - ./unit-test
+  - ./unit_test
