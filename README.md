@@ -13,7 +13,7 @@ Current status: *Work in progress*.
 ### Ubuntu 18.04
 
 ```bash
-$ sudo apt install gcc g++ clang clang-tidy cmake doxygen graphviz
+$ sudo apt install gcc g++ clang clang-tidy cmake cppcheck doxygen graphviz
 ```
 
 ## Build
@@ -111,6 +111,17 @@ main.cpp will be reformatted properly to
 
 ```cpp
     return EXIT_SUCCESS;
+```
+
+## Cppcheck
+
+To run [Cppcheck](http://cppcheck.sourceforge.net/) on the project
+
+```bash
+$ cmake ..
+$ make cppcheck
+[/home/user/GitHub/clang-blueprint/src/main.cpp:14]: (error) Array 'a[2]' accessed at index 3, which is out of bounds.
+...
 ```
 
 ## References

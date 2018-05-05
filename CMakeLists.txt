@@ -24,3 +24,4 @@ add_executable(clang-blueprint ${INCLUDE_FILES} ${SOURCE_FILES_NO_MAIN} ${SOURCE
 
 include(${PROJECT_SOURCE_DIR}/cmake/unit_test.cmake)
 include(${PROJECT_SOURCE_DIR}/cmake/clang_tools.cmake)
+include(${PROJECT_SOURCE_DIR}/cmake/cppcheck.cmake)
