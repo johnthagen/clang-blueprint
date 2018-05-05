@@ -4,7 +4,7 @@
 |--------------|--------------------------------------------------------------------------------|
 | Travis       | [![Travis Build Status][travis-build-status-svg]][travis-build-status]         |
 
-Example CMake project that incorporates awesome Clang tooling.
+Example [CMake](https://cmake.org/)  project that incorporates awesome [Clang](https://clang.llvm.org/) tooling.
 
 Current status: *Work in progress*.
 
@@ -48,11 +48,16 @@ $ ./clang-blueprint
 
 ### Unit tests
 
+Unit tests are written using the [Catch2](https://github.com/catchorg/Catch2/) unit testing framework.
+
 ```bash
 $ ./unit-test
 ```
 
 ## Build Docs
+
+Documentation is built using [Doxygen](www.doxygen.org/). To configure how the docs are built,
+modify [docs/Doxyfile](docs/Doxyfile).
 
 ```bash
 $ cd docs
@@ -123,13 +128,6 @@ $ make cppcheck
 [/home/user/GitHub/clang-blueprint/src/main.cpp:14]: (error) Array 'a[2]' accessed at index 3, which is out of bounds.
 ...
 ```
-
-## References
-
-- [Clang](https://clang.llvm.org/) - Compiler Framework
-- [CMake](https://cmake.org/) - Cross Platform Build System
-- [Catch2](https://github.com/catchorg/Catch2/) - Unit Testing
-- [Doxygen](www.doxygen.org/) - Documentation Generation
 
 <!-- Badges -->
 [travis-build-status]: https://travis-ci.org/johnthagen/clang-blueprint
