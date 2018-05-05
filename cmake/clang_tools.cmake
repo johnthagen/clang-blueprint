@@ -11,7 +11,7 @@ if (CLANG_TIDY)
             ${SOURCE_FILES}
             --
             -std=c++11
-            -I ${PROJECT_SOURCE_DIR}/include
+            -I ${CMAKE_SOURCE_DIR}/include
     )
 endif ()
 
