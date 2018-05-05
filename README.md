@@ -66,6 +66,9 @@ Navigate into the `build` directory.
 
 ### Clang-Tidy
 
+Clang-Tidy is configured using the [`.clang-format`](.clang-format) configuration file. Modify
+this file to control which checks should be run and configure parameters for certain checks.
+
 ```bash
 $ cmake ..
 $ make clang-tidy
@@ -78,6 +81,36 @@ int32_t main(const int32_t argc, const char* argv[]) {
                             /*argc*/
 /home/user/GitHub/clang-blueprint/src/main.
 ...
+```
+
+### Clang-Format
+
+Clang-Format is configured using the [.clang-format](.clang-format) configuration file. Modify
+this file to control how source files should be formatted.
+
+To demonstrate `clang-format` in action, first modify [src/main.cpp](src/main.cpp) from
+
+```cpp
+    return EXIT_SUCCESS;
+```
+
+To
+
+```cpp
+    return           EXIT_SUCCESS;
+```
+
+Next, run `clang-format` on the project.
+
+```bash
+$ cmake ..
+$ make clang-format
+```
+
+main.cpp will be reformatted properly to
+
+```cpp
+    return EXIT_SUCCESS;
 ```
 
 ## References

@@ -1,0 +1,6 @@
+BasedOnStyle: Google
+IndentWidth: 4
+ColumnLimit: 100
+# Force pointers/references to the type for C++.
+# See: https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rl-ptr
+DerivePointerAlignment: false
