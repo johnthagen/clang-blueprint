@@ -66,8 +66,8 @@ Navigate into the `build` directory.
 
 ### Clang-Tidy
 
-Clang-Tidy is configured using the [`.clang-format`](.clang-format) configuration file. Modify
-this file to control which checks should be run and configure parameters for certain checks.
+[Clang-Tidy](http://clang.llvm.org/extra/clang-tidy/) is configured using the [`.clang-format`](.clang-format) 
+configuration file. Modify this file to control which checks should be run and configure parameters for certain checks.
 
 ```bash
 $ cmake ..
@@ -85,8 +85,8 @@ int32_t main(const int32_t argc, const char* argv[]) {
 
 ### Clang-Format
 
-Clang-Format is configured using the [.clang-format](.clang-format) configuration file. Modify
-this file to control how source files should be formatted.
+[Clang-Format](https://clang.llvm.org/docs/ClangFormat.html) is configured using the [.clang-format](.clang-format) 
+configuration file. Modify this file to control how source files should be formatted.
 
 To demonstrate `clang-format` in action, first modify [src/main.cpp](src/main.cpp) from
 
