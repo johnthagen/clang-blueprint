@@ -69,6 +69,15 @@ Navigate into the `build` directory.
 ```bash
 $ cmake ..
 $ make clang-tidy
+Scanning dependencies of target clang-tidy
+95 warnings generated.
+7477 warnings generated.
+/home/user/GitHub/clang-blueprint/src/main.cpp:10:28: warning: parameter 'argc' is unused [misc-unused-parameters]
+int32_t main(const int32_t argc, const char* argv[]) {
+                           ^~~~~
+                            /*argc*/
+/home/user/GitHub/clang-blueprint/src/main.
+...
 ```
 
 ## References
