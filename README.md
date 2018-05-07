@@ -49,7 +49,8 @@ $ ./clang-blueprint
 
 ### Unit tests
 
-Unit tests are written using the [Catch2](https://github.com/catchorg/Catch2/) unit testing framework.
+Unit tests are written using the [Catch2](https://github.com/catchorg/Catch2/) unit testing
+framework.
 
 ```bash
 $ ./unit-test
