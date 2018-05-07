@@ -94,6 +94,9 @@ To run any Clang tools, first navigate into the `build` directory.
 [`.clang-tidy`](.clang-tidy) configuration file. Modify this file to control which checks should 
 be run and configure parameters for certain checks.
 
+For real projects, you'll like want to modify this configuration file and disable certain
+checks you feel are too pedantic or don't match your project needs.
+
 ```bash
 $ cmake ..
 $ make clang-tidy
@@ -176,11 +179,12 @@ $ firefox coverage/index.html
 
 ### Clang-Format
 
-[Clang-Format](https://clang.llvm.org/docs/ClangFormat.html) is configured using 
-the [`.clang-format`](.clang-format) configuration file. Modify this file to control how source 
-files should be formatted.
+[Clang-Format](https://clang.llvm.org/docs/ClangFormat.html) is a tool that can automically
+format your source code accordiing to a specific style guide, saving developers time. It is 
+configured using the [`.clang-format`](.clang-format) configuration file. Modify this file to
+control how source files should be formatted.
 
-To demonstrate `clang-format` in action, first modify [`src/main.cpp`](src/main.cpp) from
+To demonstrate `clang-format` in action, first modify a line from [`src/main.cpp`](src/main.cpp)
 
 ```cpp
     return EXIT_SUCCESS;
@@ -207,7 +211,8 @@ $ make clang-format
 
 ## Cppcheck
 
-To run [Cppcheck](http://cppcheck.sourceforge.net/) on the project
+[Cppcheck](http://cppcheck.sourceforge.net/) is a static analysis tool for C/C++ code. To run 
+on the project
 
 ```bash
 $ cmake ..
