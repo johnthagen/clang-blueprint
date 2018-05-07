@@ -110,7 +110,21 @@ int32_t main(const int32_t argc, const char* argv[]) {
 ...
 ```
 
-### [AddressSanitizer](https://clang.llvm.org/docs/AddressSanitizer.html)
+### AddressSanitizer
+
+[AddressSanitizer](https://clang.llvm.org/docs/AddressSanitizer.html) is a fast memory error
+detector. It consists of a compiler instrumentation module and a run-time library.
+The tool can detect the following types of bugs:
+
+- Out-of-bounds accesses to heap, stack and globals
+- Use-after-free
+- Use-after-return
+- Use-after-scope
+- Double-free, invalid free
+- Memory leaks
+
+It is similar in functionality to Valgrind, but runs much faster and is able to catch a
+wider variety of bugs.
 
 ```bash
 $ cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=clang++ -DADDRESS_SANITIZER=On ..
@@ -121,7 +135,16 @@ pc 0x000000616ecf bp 0x7ffd7aab4b30 sp 0x7ffd7aab4b28
 ...
 ```
 
-### [UndefinedSanitizer](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html)
+### UndefinedBehaviourSanitizer
+
+The [UndefinedBehaviourSanitizer](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html)
+
+UBSan modifies the program at compile-time to catch various kinds of undefined behavior during 
+program execution, for example:
+
+- Using misaligned or null pointer
+- Signed integer overflow
+- Conversion to, from, or between floating-point types which would overflow the destination
 
 ```bash
 $ cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=clang++ -DUNDEFINED_SANITIZER=On ..
@@ -133,6 +156,9 @@ runtime error: signed integer overflow: 2147483647 + 1 cannot be represented in 
 ```
 
 ### Clang Code Coverage
+
+[Clang source-based code coverage](https://clang.llvm.org/docs/SourceBasedCodeCoverage.html)
+provides metrics on which lines are covered by tests.
 
 ```bash
 $ cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=clang++ -DCLANG_CODE_COVERAGE=On ..
