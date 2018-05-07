@@ -88,6 +88,17 @@ int32_t main(const int32_t argc, const char* argv[]) {
 ...
 ```
 
+### AddressSanitizer
+
+```
+$ cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=clang++ -DADDRESS_SANITIZER=On ..
+$ make
+$ ./unit_test
+==25797==ERROR: AddressSanitizer: heap-use-after-free on address 0x61400000024c at pc 0x000000616ecf bp 0x7ffd7aab4b30 
+sp 0x7ffd7aab4b28
+...
+```
+
 ### Clang-Format
 
 [Clang-Format](https://clang.llvm.org/docs/ClangFormat.html) is configured using the [`.clang-format`](.clang-format) 

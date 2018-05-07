@@ -29,3 +29,10 @@ if (CLANG_FORMAT)
             ${SOURCE_FILES} ${TEST_SOURCE_FILES}
     )
 endif ()
+
+option(ADDRESS_SANITIZER "Enable Clang AddresSanitizer" OFF)
+if (ADDRESS_SANITIZER)
+    message(STATUS "AddressSanitizer enabled for debug build")
+    set(CMAKE_CXX_FLAGS_DEBUG
+        "${CMAKE_CXX_FLAGS_DEBUG} -O1 -fno-omit-frame-pointer -fsanitize=address")
+endif ()
