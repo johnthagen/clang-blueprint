@@ -22,6 +22,7 @@ add_executable(clang-blueprint ${INCLUDE_FILES} ${SOURCE_FILES_NO_MAIN} ${SOURCE
 #   find_library(LIB_FMT fmt)
 #   target_link_libraries(clang-blueprint ${LIB_FMT})
 
+# Include extra CMake files that are used for testing and linting.
 include(${CMAKE_SOURCE_DIR}/cmake/unit_test.cmake)
 include(${CMAKE_SOURCE_DIR}/cmake/clang_tools.cmake)
 include(${CMAKE_SOURCE_DIR}/cmake/cppcheck.cmake)
