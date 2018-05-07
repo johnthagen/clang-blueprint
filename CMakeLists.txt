@@ -8,6 +8,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED)
 
 include_directories(include)
 
+# Use globbing to find source files.
+# Any source files added to include/ or src/ will automatically be added to the project.
 file(GLOB_RECURSE INCLUDE_FILES ${CMAKE_SOURCE_DIR}/include/*.h)
 file(GLOB_RECURSE SOURCE_FILES_NO_MAIN ${CMAKE_SOURCE_DIR}/src/*.cpp)
 list(REMOVE_ITEM SOURCE_FILES_NO_MAIN ${CMAKE_SOURCE_DIR}/src/main.cpp)
