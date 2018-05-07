@@ -37,6 +37,22 @@ $ cmake -DCMAKE_CXX_COMPILER=clang++ ..
 $ make
 ```
 
+### Treat warnings as errors
+
+Use `-DWERROR=On` option to treat compile warnings as errors.
+
+```bash
+$ cd build
+$ cmake -DERROR=On ..
+$ make
+/home/user/GitHub/clang-blueprint/src/danger/bad_examples.cpp:13:18: error: array index
+      3 is past the end of the array (which contains 2 elements)
+      [-Werror,-Warray-bounds]
+    std::cout << a[3];
+                 ^ ~
+...
+```
+
 ## Run
 
 Navigate into the `build` directory.
