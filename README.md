@@ -138,8 +138,7 @@ pc 0x000000616ecf bp 0x7ffd7aab4b30 sp 0x7ffd7aab4b28
 ### UndefinedBehaviourSanitizer
 
 The [UndefinedBehaviourSanitizer](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html)
-
-UBSan modifies the program at compile-time to catch various kinds of undefined behavior during 
+modifies the program at compile-time to catch various kinds of undefined behavior during 
 program execution, for example:
 
 - Using misaligned or null pointer
