@@ -26,3 +26,7 @@ add_executable(clang-blueprint ${INCLUDE_FILES} ${SOURCE_FILES_NO_MAIN} ${SOURCE
 include(${CMAKE_SOURCE_DIR}/cmake/unit_test.cmake)
 include(${CMAKE_SOURCE_DIR}/cmake/clang_tools.cmake)
 include(${CMAKE_SOURCE_DIR}/cmake/cppcheck.cmake)
+
+# Enable all warnings except for no-sign-compare, which Clang disables
+# by default.
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wno-sign-compare")
