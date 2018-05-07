@@ -83,6 +83,8 @@ $ doxygen
 $ firefox html/index.html
 ```
 
+![Doxygen Documentation](./docs/images/doxygen.png)
+
 ## Clang Tools
 
 Navigate into the `build` directory.
