@@ -7,6 +7,9 @@
 Example C++11 [CMake](https://cmake.org/)  project that incorporates awesome 
 [Clang](https://clang.llvm.org/) tooling.
 
+For more information about Clang, see the 
+[awesome-clang](https://github.com/ingve/awesome-clang) repository.
+
 ## Requirements
 
 ### Ubuntu 18.04
