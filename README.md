@@ -74,7 +74,7 @@ $ ./unit_test
 
 ## Build Docs
 
-Documentation is built using [Doxygen](www.doxygen.org/). To configure how the docs are built,
+Documentation is built using [Doxygen](http://www.doxygen.org/). To configure how the docs are built,
 modify [`docs/Doxyfile`](docs/Doxyfile).
 
 ```bash
