@@ -13,4 +13,4 @@ void bad_cppcheck_example() {
     std::cout << a[3];
 }
 
-} // namespace danger
+}  // namespace danger

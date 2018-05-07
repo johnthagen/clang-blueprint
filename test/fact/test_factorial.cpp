@@ -10,8 +10,8 @@ TEST_CASE("Factorials computed", "[factorial]") {
 }
 
 int danger_function(int argc) {
-    int *array = new int[100];
-    delete [] array;
+    int* array = new int[100];
+    delete[] array;
     return array[argc];  // BOOM
 }
 
