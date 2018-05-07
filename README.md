@@ -54,7 +54,7 @@ $ make
 
 ## Run
 
-Navigate into the `build` directory.
+First, perform a build as described in the **Build** section.
 
 ### Application
 
@@ -86,7 +86,7 @@ $ firefox html/index.html
 
 ## Clang Tools
 
-Navigate into the `build` directory.
+To run any Clang tools, first navigate into the `build` directory.
 
 ### Clang-Tidy
 
