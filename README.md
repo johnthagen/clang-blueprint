@@ -69,7 +69,7 @@ Unit tests are written using the [Catch2](https://github.com/catchorg/Catch2/) u
 framework.
 
 ```bash
-$ ./unit-test
+$ ./unit_test
 ```
 
 ## Build Docs
