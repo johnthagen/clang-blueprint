@@ -54,7 +54,8 @@ $ make
 
 ## Run
 
-First, perform a build as described in the **Build** section.
+First, perform a build as described in the **Build** section, then run the following
+commands in the `build` directory.
 
 ### Application
 
