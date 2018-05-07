@@ -13,7 +13,7 @@ Current status: *Work in progress*.
 ### Ubuntu 18.04
 
 ```bash
-$ sudo apt install gcc g++ clang clang-tidy cmake cppcheck doxygen graphviz
+$ sudo apt install gcc g++ clang clang-tidy clang-format cmake cppcheck doxygen graphviz
 ```
 
 ## Build
