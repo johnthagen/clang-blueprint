@@ -7,6 +7,9 @@
 Example C++11 [CMake](https://cmake.org/)  project that incorporates awesome 
 [Clang](https://clang.llvm.org/) tooling.
 
+This repository is designed to be used as an example of how to set up a C++ project to use
+Clang tooling as well as be a template that can be copied and modified.
+
 For more information about Clang, see the 
 [awesome-clang](https://github.com/ingve/awesome-clang) repository.
 
