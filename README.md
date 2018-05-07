@@ -4,7 +4,8 @@
 |--------------|--------------------------------------------------------------------------------|
 | Travis       | [![Travis Build Status][travis-build-status-svg]][travis-build-status]         |
 
-Example [CMake](https://cmake.org/)  project that incorporates awesome [Clang](https://clang.llvm.org/) tooling.
+Example [CMake](https://cmake.org/)  project that incorporates awesome 
+[Clang](https://clang.llvm.org/) tooling.
 
 Current status: *Work in progress*.
 
@@ -71,8 +72,9 @@ Navigate into the `build` directory.
 
 ### Clang-Tidy
 
-[Clang-Tidy](http://clang.llvm.org/extra/clang-tidy/) is configured using the [`.clang-tidy`](.clang-tidy) 
-configuration file. Modify this file to control which checks should be run and configure parameters for certain checks.
+[Clang-Tidy](http://clang.llvm.org/extra/clang-tidy/) is configured using the 
+[`.clang-tidy`](.clang-tidy) configuration file. Modify this file to control which checks should 
+be run and configure parameters for certain checks.
 
 ```bash
 $ cmake ..
@@ -80,7 +82,8 @@ $ make clang-tidy
 Scanning dependencies of target clang-tidy
 95 warnings generated.
 7477 warnings generated.
-/home/user/GitHub/clang-blueprint/src/main.cpp:10:28: warning: parameter 'argc' is unused [misc-unused-parameters]
+/home/user/GitHub/clang-blueprint/src/main.cpp:10:28: warning: 
+    parameter 'argc' is unused [misc-unused-parameters]
 int32_t main(const int32_t argc, const char* argv[]) {
                            ^~~~~
                             /*argc*/
@@ -94,8 +97,8 @@ int32_t main(const int32_t argc, const char* argv[]) {
 $ cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=clang++ -DADDRESS_SANITIZER=On ..
 $ make
 $ ./unit_test
-==25797==ERROR: AddressSanitizer: heap-use-after-free on address 0x61400000024c at pc 0x000000616ecf bp 0x7ffd7aab4b30 
-sp 0x7ffd7aab4b28
+==25797==ERROR: AddressSanitizer: heap-use-after-free on address 0x61400000024c at 
+pc 0x000000616ecf bp 0x7ffd7aab4b30 sp 0x7ffd7aab4b28
 ...
 ```
 
@@ -112,8 +115,9 @@ runtime error: signed integer overflow: 2147483647 + 1 cannot be represented in 
 
 ### Clang-Format
 
-[Clang-Format](https://clang.llvm.org/docs/ClangFormat.html) is configured using the [`.clang-format`](.clang-format) 
-configuration file. Modify this file to control how source files should be formatted.
+[Clang-Format](https://clang.llvm.org/docs/ClangFormat.html) is configured using 
+the [`.clang-format`](.clang-format) configuration file. Modify this file to control how source 
+files should be formatted.
 
 To demonstrate `clang-format` in action, first modify [`src/main.cpp`](src/main.cpp) from
 
@@ -134,7 +138,7 @@ $ cmake ..
 $ make clang-format
 ```
 
-main.cpp will be reformatted properly to
+[`src/main.cpp`](src/main.cpp) will be reformatted properly to
 
 ```cpp
     return EXIT_SUCCESS;
@@ -147,7 +151,8 @@ To run [Cppcheck](http://cppcheck.sourceforge.net/) on the project
 ```bash
 $ cmake ..
 $ make cppcheck
-[/home/user/GitHub/clang-blueprint/src/main.cpp:14]: (error) Array 'a[2]' accessed at index 3, which is out of bounds.
+[/home/user/GitHub/clang-blueprint/src/main.cpp:14]: (error) Array 'a[2]' accessed at index 3, 
+    which is out of bounds.
 ...
 ```
 
