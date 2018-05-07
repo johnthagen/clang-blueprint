@@ -1,5 +1,5 @@
 /// \file
-/// File that contains known bugs to demonstrate analyzer behavior.
+/// \brief File that contains known bugs to demonstrate analyzer behavior.
 
 #include <iostream>
 
