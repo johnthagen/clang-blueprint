@@ -4,10 +4,8 @@
 |--------------|--------------------------------------------------------------------------------|
 | Travis       | [![Travis Build Status][travis-build-status-svg]][travis-build-status]         |
 
-Example [CMake](https://cmake.org/)  project that incorporates awesome 
+Example C++11 [CMake](https://cmake.org/)  project that incorporates awesome 
 [Clang](https://clang.llvm.org/) tooling.
-
-Current status: *Work in progress*.
 
 ## Requirements
 
@@ -19,7 +17,8 @@ $ sudo apt install gcc g++ clang clang-tidy clang-format cmake cppcheck doxygen 
 
 ## Build
 
-Use `-DCMAKE_BUILD_TYPE=Release` or `-DCMAKE_BUILD_TYPE=Debug` to specify release or debug builds.
+Append `-DCMAKE_BUILD_TYPE=Release` or `-DCMAKE_BUILD_TYPE=Debug` to the `cmake` command
+arguments to specify release or debug builds.
 
 ### GCC
 
