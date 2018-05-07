@@ -30,9 +30,16 @@ if (CLANG_FORMAT)
     )
 endif ()
 
-option(ADDRESS_SANITIZER "Enable Clang AddresSanitizer" OFF)
+option(ADDRESS_SANITIZER "Enable Clang AddressSanitizer" OFF)
 if (ADDRESS_SANITIZER)
     message(STATUS "AddressSanitizer enabled for debug build")
     set(CMAKE_CXX_FLAGS_DEBUG
         "${CMAKE_CXX_FLAGS_DEBUG} -O1 -fno-omit-frame-pointer -fsanitize=address")
+endif ()
+
+option(UNDEFINED_SANITIZER "Enable Clang UndefinedBehaviorSanitizer" OFF)
+if (UNDEFINED_SANITIZER)
+    message(STATUS "UndefinedBehaviorSanitizer enabled for debug build")
+    set(CMAKE_CXX_FLAGS_DEBUG
+            "${CMAKE_CXX_FLAGS_DEBUG} -fsanitize=undefined -fsanitize=integer")
 endif ()
