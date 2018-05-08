@@ -227,7 +227,7 @@ $ ./unit_test
 # On Ubuntu 18.04, use the specific llvm-profdata-6.0 command.
 $ llvm-profdata merge -sparse default.profraw -o default.profdata
 # On Ubuntu 18.04, use the specific llvm-cov-6.0 command.
-$ llvm-cov show -format=html -o coverage ./unit_test -instr-profile=default.profdata > coverage.html
+$ llvm-cov show -format=html -o coverage ./unit_test -instr-profile=default.profdata
 
 # View the coverage report.
 $ firefox coverage/index.html
