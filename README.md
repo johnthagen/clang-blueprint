@@ -5,13 +5,16 @@
 | Travis       | [![Travis Build Status][travis-build-status-svg]][travis-build-status]         |
 
 Example C++11 [CMake](https://cmake.org/)  project that incorporates awesome 
-[Clang](https://clang.llvm.org/) tooling.
+[Clang](https://clang.llvm.org/) tooling, such as sanitizers, a code formatter, and code coverage reporting.
 
 This repository is designed to be used as an example of how to set up a C++ project to use
-Clang tooling as well as be a template that can be copied and modified.
+Clang tooling as well as be a template that can be copied and modified. Care has been taken to follow
+established C++ conventions whenever possible. 
 
 For more information about Clang, see the 
 [awesome-clang](https://github.com/ingve/awesome-clang) repository.
+
+For C++ coding guidelines, see the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines).
 
 ## Requirements
 
