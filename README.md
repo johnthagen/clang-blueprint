@@ -57,7 +57,7 @@ $ make
 ### Clang
 
 **Note: On CentOS 7, replace the `cmake` command with 
-`scl enable llvm-toolset-7 'cmake3 -DCMAKE_CXX_COMPILER=clang++'`.**
+`scl enable llvm-toolset-7 'cmake3 -DCMAKE_CXX_COMPILER=clang++ ..'`.**
 
 ```bash
 $ cd build
