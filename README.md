@@ -5,16 +5,18 @@
 | Travis       | [![Travis Build Status][travis-build-status-svg]][travis-build-status]         |
 
 Example C++11 [CMake](https://cmake.org/)  project that incorporates awesome 
-[Clang](https://clang.llvm.org/) tooling, such as sanitizers, a code formatter, and code coverage reporting.
+[Clang](https://clang.llvm.org/) tooling, such as sanitizers, a code formatter, and code coverage
+reporting.
 
 This repository is designed to be used as an example of how to set up a C++ project to use
-Clang tooling as well as be a template that can be copied and modified. Care has been taken to follow
-established C++ conventions whenever possible. 
+Clang tooling as well as be a template that can be copied and modified. Care has been taken to 
+follow established C++ conventions whenever possible. 
 
 For more information about Clang, see the 
 [awesome-clang](https://github.com/ingve/awesome-clang) repository.
 
-For C++ coding guidelines, see the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines).
+For C++ coding guidelines, see the 
+[C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines).
 
 ## Requirements
 
@@ -22,6 +24,16 @@ For C++ coding guidelines, see the [C++ Core Guidelines](https://github.com/isoc
 
 ```bash
 $ sudo apt install gcc g++ clang clang-tidy clang-format cmake cppcheck doxygen graphviz
+```
+
+### macOS
+
+Install [Homebrew](https://brew.sh/)
+
+Install required packages
+
+```
+$ brew install clang-format cmake cppcheck doxygen graphviz
 ```
 
 ### CentOS 7
@@ -106,8 +118,8 @@ $ ./unit_test
 
 ## Build Docs
 
-Documentation is built using [Doxygen](http://www.doxygen.org/). To configure how the docs are built,
-modify [`docs/Doxyfile`](docs/Doxyfile).
+Documentation is built using [Doxygen](http://www.doxygen.org/). To configure how the docs are 
+built, modify [`docs/Doxyfile`](docs/Doxyfile).
 
 ```bash
 $ cd docs
@@ -121,8 +133,8 @@ $ firefox html/index.html
 
 To run any Clang tools, first navigate into the `build` directory.
 
-**Note: On CentOS 7 for all of the following Clang tool instructions, replace the `cmake` command with 
-`scl enable llvm-toolset-7 'cmake3 <OPTIONS> ..'`.**
+**Note: On CentOS 7 for all of the following Clang tool instructions, replace the `cmake` 
+command with `scl enable llvm-toolset-7 'cmake3 <OPTIONS> ..'`.**
 
 ### Clang-Tidy
 
