@@ -33,7 +33,15 @@ Install [Homebrew](https://brew.sh/)
 Install required packages
 
 ```
-$ brew install clang-format cmake cppcheck doxygen graphviz
+$ brew install llvm clang-format cmake cppcheck doxygen graphviz
+```
+
+The `llvm` formula is not installed into the user's `PATH` by default because it shadows
+tools such as `clang` that Apple provide. In order to use `clang-tidy` and LLVM code
+coverage tools, we need those in the `PATH` when `cmake` runs.
+
+```bash
+$ echo 'export PATH="/usr/local/opt/llvm/bin:$PATH"' >> ~/.bash_profile
 ```
 
 ### CentOS 7
