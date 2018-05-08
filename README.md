@@ -21,6 +21,26 @@ For more information about Clang, see the
 $ sudo apt install gcc g++ clang clang-tidy clang-format cmake cppcheck doxygen graphviz
 ```
 
+### CentOS 7
+
+First install the [EPEL](https://fedoraproject.org/wiki/EPEL) repository.
+
+```bash
+$ sudo yum install epel-release
+```
+
+Next install the [SCL](https://wiki.centos.org/AdditionalResources/Repositories/SCL) repository.
+
+```bash
+$ sudo yum install centos-release-scl
+```
+
+Install required packages
+
+```bash
+$ sudo yum install gcc gcc-c++ llvm-toolset-7 cmake3 cppcheck doxygen graphviz
+```
+
 ## Build
 
 Append `-DCMAKE_BUILD_TYPE=Release` or `-DCMAKE_BUILD_TYPE=Debug` to the `cmake` command
@@ -35,6 +55,9 @@ $ make
 ```
 
 ### Clang
+
+**Note: On CentOS 7, replace the `cmake` command with 
+`scl enable llvm-toolset-7 'cmake3 -DCMAKE_CXX_COMPILER=clang++'`.**
 
 ```bash
 $ cd build
@@ -95,6 +118,9 @@ $ firefox html/index.html
 
 To run any Clang tools, first navigate into the `build` directory.
 
+**Note: On CentOS 7 for all of the following Clang tool instructions, replace the `cmake` command with 
+`scl enable llvm-toolset-7 'cmake3 <OPTIONS> ..'`.**
+
 ### Clang-Tidy
 
 [Clang-Tidy](http://clang.llvm.org/extra/clang-tidy/) is configured using the 
@@ -103,6 +129,8 @@ be run and configure parameters for certain checks.
 
 For real projects, you'll like want to modify this configuration file and disable certain
 checks you feel are too pedantic or don't match your project needs.
+
+**Note: Not available on CentOS 7.**
 
 ```bash
 $ cmake ..
