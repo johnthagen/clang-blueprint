@@ -144,6 +144,26 @@ To run any Clang tools, first navigate into the `build` directory.
 **Note: On CentOS 7 for all of the following Clang tool instructions, replace the `cmake` 
 command with `scl enable llvm-toolset-7 'cmake3 <OPTIONS> ..'`.**
 
+### Clang Static Analyzer
+
+The [Clang Static Analyzer](https://clang-analyzer.llvm.org/) finds bugs in C/C++ programs
+at compile time.
+
+```bash
+$ scan-build cmake ..
+$ scan-build make
+...
+scan-build: 2 bugs found.
+scan-build: Run 'scan-view /var/folders/...' to examine bug reports.
+
+# Run the scan-view command printed in the build output to view the report.
+$ scan-view /var/folders/...
+```
+
+![Clang Static Analyzer Report](docs/images/clang_static_analyzer_1.png)
+
+![Clang Static Analyzer Report](docs/images/clang_static_analyzer_2.png)
+
 ### Clang-Tidy
 
 [Clang-Tidy](http://clang.llvm.org/extra/clang-tidy/) is configured using the 
