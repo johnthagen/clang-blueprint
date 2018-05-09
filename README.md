@@ -23,7 +23,7 @@ For C++ coding guidelines, see the
 ### Ubuntu 18.04
 
 ```bash
-$ sudo apt install gcc g++ clang clang-tidy clang-format cmake cppcheck doxygen graphviz
+$ sudo apt install gcc g++ clang clang-tidy clang-tools clang-format cmake cppcheck doxygen graphviz
 ```
 
 ### macOS
@@ -150,6 +150,7 @@ The [Clang Static Analyzer](https://clang-analyzer.llvm.org/) finds bugs in C/C+
 at compile time.
 
 ```bash
+# On Ubuntu 18.04, use the specific scan-build-6.0 command.
 $ scan-build cmake ..
 $ scan-build make
 ...
@@ -157,6 +158,7 @@ scan-build: 2 bugs found.
 scan-build: Run 'scan-view /var/folders/...' to examine bug reports.
 
 # Run the scan-view command printed in the build output to view the report.
+# On Ubuntu 18.04, use the specific scan-view-6.0 command.
 $ scan-view /var/folders/...
 ```
 
