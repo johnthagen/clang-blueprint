@@ -170,7 +170,7 @@ $ scan-view /var/folders/...
 [`.clang-tidy`](.clang-tidy) configuration file. Modify this file to control which checks should 
 be run and configure parameters for certain checks.
 
-For real projects, you'll like want to modify this configuration file and disable certain
+For real projects, you'll likely want to modify this configuration file and disable certain
 checks you feel are too pedantic or don't match your project needs.
 
 **Note: Not available on CentOS 7.**
