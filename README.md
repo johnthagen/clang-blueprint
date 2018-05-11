@@ -61,7 +61,7 @@ $ sudo yum install centos-release-scl
 Install required packages
 
 ```bash
-$ sudo yum install gcc gcc-c++ llvm-toolset-7 cmake3 cppcheck doxygen graphviz
+$ sudo yum install gcc gcc-c++ llvm-toolset-7 llvm-toolset-7-clang-tools-extra cmake3 cppcheck doxygen graphviz
 ```
 
 ## Build
@@ -175,8 +175,6 @@ be run and configure parameters for certain checks.
 
 For real projects, you'll likely want to modify this configuration file and disable certain
 checks you feel are too pedantic or don't match your project needs.
-
-**Note: Not available on CentOS 7.**
 
 ```bash
 $ cd build
