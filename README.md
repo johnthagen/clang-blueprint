@@ -20,7 +20,7 @@ For C++ coding guidelines, see the
 
 ## Requirements
 
-### Ubuntu 18.04
+### Ubuntu 18.04 LTS
 
 ```bash
 $ sudo apt install gcc g++ clang clang-tidy clang-tools clang-format cmake cppcheck doxygen graphviz
