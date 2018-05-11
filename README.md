@@ -139,8 +139,6 @@ $ firefox html/index.html
 
 ## Clang Tools
 
-To run any Clang tools, first navigate into the `build` directory.
-
 **Note: On CentOS 7 for all of the following Clang tool instructions, replace the `cmake` 
 command with `scl enable llvm-toolset-7 'cmake3 <OPTIONS> ..'`.**
 
@@ -150,6 +148,7 @@ The [Clang Static Analyzer](https://clang-analyzer.llvm.org/) finds bugs in C/C+
 at compile time.
 
 ```bash
+$ cd build
 # On Ubuntu 18.04, use the specific scan-build-6.0 command.
 $ scan-build cmake ..
 $ scan-build make
@@ -178,6 +177,7 @@ checks you feel are too pedantic or don't match your project needs.
 **Note: Not available on CentOS 7.**
 
 ```bash
+$ cd build
 $ cmake ..
 $ make clang-tidy
 Scanning dependencies of target clang-tidy
@@ -209,6 +209,7 @@ It is similar in functionality to Valgrind, but runs much faster and is able to 
 wider variety of bugs.
 
 ```bash
+$ cd build
 $ cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=clang++ -DADDRESS_SANITIZER=On ..
 $ make
 $ ./unit_test
@@ -228,6 +229,7 @@ program execution, for example:
 - Conversion to, from, or between floating-point types which would overflow the destination
 
 ```bash
+$ cd build
 $ cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=clang++ -DUNDEFINED_SANITIZER=On ..
 $ make
 $ ./unit_test
@@ -242,6 +244,7 @@ runtime error: signed integer overflow: 2147483647 + 1 cannot be represented in 
 provides metrics on which lines are covered by tests.
 
 ```bash
+$ cd build
 $ cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=clang++ -DCLANG_CODE_COVERAGE=On ..
 $ make
 $ ./unit_test
@@ -279,6 +282,7 @@ To
 Next, run `clang-format` on the project.
 
 ```bash
+$ cd build
 $ cmake ..
 $ make clang-format
 ```
@@ -295,6 +299,7 @@ $ make clang-format
 on the project
 
 ```bash
+$ cd build
 $ cmake ..
 $ make cppcheck
 [/home/user/GitHub/clang-blueprint/src/main.cpp:14]: (error) Array 'a[2]' accessed at index 3, 
