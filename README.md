@@ -147,6 +147,8 @@ command with `scl enable llvm-toolset-7 'cmake3 <OPTIONS> ..'`.**
 The [Clang Static Analyzer](https://clang-analyzer.llvm.org/) finds bugs in C/C++ programs
 at compile time.
 
+**Note: Not available on CentOS 7.**
+
 ```bash
 $ cd build
 # On Ubuntu 18.04, use the specific scan-build-6.0 command.
