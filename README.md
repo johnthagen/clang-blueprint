@@ -22,6 +22,10 @@ For C++ coding guidelines, see the
 
 ### Ubuntu 18.04 LTS
 
+Install required packages.
+
+On Ubuntu 16.04 LTS, omit the `clang-tools` package, which is a part of the `clang` package.
+
 ```bash
 $ sudo apt install gcc g++ clang clang-tidy clang-tools clang-format cmake cppcheck doxygen graphviz
 ```
