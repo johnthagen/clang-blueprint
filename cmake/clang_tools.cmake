@@ -1,12 +1,7 @@
 # This file defines custom targets and options to support running
 # or enabling Clang tooling.
 
-find_program(CLANG_TIDY clang-tidy)
-# Ubuntu 18.04 installs clang-tidy as clang-tidy-6.0.
-if (NOT CLANG_TIDY)
-    find_program(CLANG_TIDY clang-tidy-6.0)
-endif ()
-
+find_program(CLANG_TIDY NAMES clang-tidy clang-tidy-6.0)
 if (CLANG_TIDY)
     add_custom_target(
             clang-tidy
@@ -18,12 +13,7 @@ if (CLANG_TIDY)
     )
 endif ()
 
-find_program(CLANG_FORMAT clang-format)
-# Ubuntu 18.04 installs clang-format as clang-format-6.0.
-if (NOT CLANG_FORMAT)
-    find_program(CLANG_FORMAT clang-format-6.0)
-endif ()
-
+find_program(CLANG_FORMAT clang-format clang-format-6.0)
 if (CLANG_FORMAT)
     add_custom_target(
             clang-format
