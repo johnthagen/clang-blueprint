@@ -7,7 +7,7 @@ compiler:
 matrix:
   include:
     - os: linux
-      dist: trusty
+      dist: xenial
     - os: osx
 
 script:
