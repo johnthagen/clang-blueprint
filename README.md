@@ -1,5 +1,8 @@
 # clang-blueprint
 
+<!-- Doxygen Table of Contents -->
+[TOC]
+
 | Build Status |                                                                                |
 |--------------|--------------------------------------------------------------------------------|
 | Travis       | [![Travis Build Status][travis-build-status-svg]][travis-build-status]         |
