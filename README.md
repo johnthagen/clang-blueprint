@@ -315,5 +315,5 @@ $ make cppcheck
 ```
 
 <!-- Badges -->
-[travis-build-status]: https://travis-ci.org/johnthagen/clang-blueprint
-[travis-build-status-svg]: https://travis-ci.org/johnthagen/clang-blueprint.svg?branch=master
+[travis-build-status]: https://travis-ci.com/johnthagen/clang-blueprint
+[travis-build-status-svg]: https://travis-ci.com/johnthagen/clang-blueprint.svg?branch=master
